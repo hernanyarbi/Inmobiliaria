@@ -1,0 +1,14 @@
+{
+  "name": "argento",
+  "version": "1.0.0",
+  "description": "api restfull para sistema de venta y alquileres de propiedades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grupo6",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
