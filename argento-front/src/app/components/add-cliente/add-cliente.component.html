@@ -1,0 +1,45 @@
+<h1 class="text-center">Clientes</h1>   
+<div class="card">
+    <div class="card-header text-white bg-danger">
+        Nuevo Cliente
+        <i class="fa fa-user-plus" aria-hidden="true"></i>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">DNI:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese DNI">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">Mail:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Mail">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">Telefono:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Telefono">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">Fecha de Nacimiento:</label>
+                    <input type="text" class="form-control" bsDatepicker #dp="bsDatepicker" [bsConfig]="bsConfig" placeholder="Ingrese Fecha de Nacimiento">
+                </div>
+            </div>
+        </div>
+        <div class="text-right">
+            <button type="button"  class="btn btn-outline-danger ">Cancelar</button>
+            <button type="button"  class="btn btn-primary">Agregar</button>
+        </div>
+    </div>
+</div>

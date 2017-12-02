@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+.size{
+    height: 100%;
+    width: 100%; 
+}
+.pointer{
+    cursor: pointer;
+}
+.top30{
+    margin-top: 30px;
+}
+
+.card-media{
+    width: 21rem;
+}
+
+@media (min-width: 990px){
+    .pos {   
+        position: absolute;
+        right: 3px;
+    }
+
+    .invisible{
+        visibility: hidden;
+    }
+
+    .card-media{
+        width: 30rem;
+    }
+}

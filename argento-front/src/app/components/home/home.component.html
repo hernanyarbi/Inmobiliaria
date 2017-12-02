@@ -1,0 +1,37 @@
+<carousel>
+    <slide *ngFor="let p of propiedades">
+        <img src="../../assets/img/{{p.imagen}}.jpg" alt="First slide" class="carousel-slide">
+    </slide>
+</carousel>
+
+<h1 class="text-center">Vista previa</h1>
+
+<div class="card-columns">
+    <div class="card card-media" *ngFor="let p of propiedades">
+        <img class="card-img-top size" src="../../assets/img/{{p.imagen}}.jpg" alt="Sin Imagen">
+        <div class="card-body">
+            <h4 class="card-title">{{p.direccion}}</h4>
+            <p>{{p.descripcion}}</p>
+            <div class="text-right">
+                <button type="button" (click)="verModal(modal)" class="btn btn-primary">
+                    <i class="fa fa-file-text-o" aria-hidden="true"></i> Ver Más </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #modal>
+    <div class="modal-header gray modal-lg">
+        <h4 class="modal-title pull-left">Modal</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+    <div class="modal-body">
+        <app-alta-propiedad></app-alta-propiedad>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send message</button>
+    </div>
+</ng-template>

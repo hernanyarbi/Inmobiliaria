@@ -1,0 +1,67 @@
+<h1 class="text-center">Clientes</h1>      
+       
+<div class="card">
+    <div class="card-header text-white bg-danger">
+        Filtros de Buscqueda
+        <button [routerLink] = "['/nuevo-cliente']" type="button" class="btn btn-secondary border-white pull-right">
+                <i class="fa fa-user-plus" aria-hidden="true"></i> Nuevo </button>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombre">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="nombre">DNI:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingrese DNI">
+                </div>
+            </div>
+            <div class="col-md-3">
+                    <div class="form-group">
+                        <label class="col-form-label" for="nombre">Mail:</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Ingrese Mail">
+                    </div>
+                </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="col-form-label" for="inputState">Estado</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Activo</option>
+                        <option>Baja</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary pull-right">
+                <i class="fa fa-search" aria-hidden="true"></i> Buscar </button>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">DNI</th>
+            <th scope="col">Estado</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let i of [1,2,3,4,5]">
+            <td>Cliente {{i}} </td>
+            <td>{{654654 + i}}</td>
+            <td>Activo</td>
+            <td>
+                <i class="pointer fa fa-pencil" aria-hidden="true"></i>
+            </td>
+            <td>
+                <i class="pointer fa fa-trash-o" aria-hidden="true"></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
